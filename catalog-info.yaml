@@ -2,12 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: orders-api
-  title: Orders Api
+  title: Orders API
   description: Order creation and order status API for Buildin10.
   annotations:
     github.com/project-slug: buildin10/orders-api
     backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-label-selector: 'app.kubernetes.io/name=orders-api'
+  links:
+    - url: https://github.com/Buildin10/gitops/tree/main/apps/orders-api
+      title: GitOps deployment
 spec:
   type: service
   lifecycle: production
@@ -18,4 +21,3 @@ spec:
   dependsOn:
     - resource:default/orders-db
     - resource:default/orders-events
-

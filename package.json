@@ -2,8 +2,6 @@
   "name": "orders-api",
   "version": "1.0.0",
   "private": true,
-  "description": "Order creation and order status API for Buildin10.",
-  "engines": { "node": ">=24" },
   "scripts": {
     "start": "node server.js",
     "check": "node --check server.js"
