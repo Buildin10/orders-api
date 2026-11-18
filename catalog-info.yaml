@@ -18,6 +18,8 @@ spec:
   system: fulfilment
   providesApis:
     - orders-rest
+  consumesApis:
+    - payments-rest
   dependsOn:
     - resource:default/orders-db
     - resource:default/orders-events
